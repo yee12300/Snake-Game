@@ -10,10 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function drawSnake() {
         snake.forEach(segment => {
             const snakePart = document.createElement('div');
-            snakePart.style.width = '10px';
-            snakePart.style.height = '10px';
-            snakePart.style.backgroundColor = 'black';
-            snakePart.style.position = 'absolute';
+            snakePart.id = 'snake-body';
             snakePart.style.left = `${segment.x}px`;
             snakePart.style.top = `${segment.y}px`;
             snakeElement.appendChild(snakePart);
